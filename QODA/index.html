@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary App with Voice Input</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dictionary App</h1>
+    <div class="search-box">
+      <input type="text" id="word-input" placeholder="Enter a word" />
+      <button onclick="fetchDefinition()">Search</button>
+      <button id="mic-btn" onclick="startVoiceRecognition()">🎤</button>
+    </div>
+    
+    <div id="definition-box">
+      <h2 id="word-title"></h2>
+      <p id="part-of-speech"></p>
+      <p id="definition"></p>
+      <p id="example"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
